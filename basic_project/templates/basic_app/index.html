@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% load staticfiles %}
+  {% block body_block %}
+  <div class="jumbotron">
+    <h1>Basic App Homepage</h1>
+  </div>
+
+
+    <!-- {{ text|cut:"o"|upper }}
+    {{ number }} -->
+
+    <!-- <h2>Access Records:</h2>
+
+      {% if access_records %}
+      <table>
+        <thead>
+          <th>Site Name</th>
+          <th>Date Accessed</th>
+        </thead>
+        {% for ar in access_records %}
+        <tbody>
+          <td>{{ ar.name }}</td>
+          <td>{{ ar.date }}</td>
+        </tbody>
+        {% endfor %}
+      </table>
+      {% else %}
+      <p>No Record found!</p>
+      {% endif %} -->
+
+  {% endblock %}
